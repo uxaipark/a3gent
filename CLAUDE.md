@@ -25,8 +25,9 @@ Inside `site/`:
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
 - `about/`, `en/about/` — About page (what a3gent does and does not do, the
   lead engineer's career, principles). The lead is **anonymous** by choice:
-  employers are named, clients are generalised, the current employer is not
-  named. Keep it that way.
+  of past employers only Samsung Electronics is named; every other employer
+  and every client is described generically ("치과 의료 AI 기업"), and the
+  current employer is not mentioned at all. Keep it that way site-wide.
 - `demos/oralpilot/`, `demos/soma/` — **static builds** of the demo apps.
   Never edit by hand: change `src/<demo>` and run `publish.sh`. They are
   built with absolute base paths `/demos/oralpilot/`, `/demos/soma/`.
