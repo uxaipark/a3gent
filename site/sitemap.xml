@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://a3gent.com/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/demos/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/demos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/demos/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/demos/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/demos/en/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/demos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/demos/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/demos/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/viewer/soma/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/viewer/soma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/viewer/soma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/viewer/soma/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/viewer/soma/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/viewer/soma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/viewer/soma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/viewer/soma/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/viewer/oralpilot/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/viewer/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/viewer/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/viewer/oralpilot/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/viewer/oralpilot/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/viewer/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/viewer/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/viewer/oralpilot/"/>
+  </url>
+</urlset>

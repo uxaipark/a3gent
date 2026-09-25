@@ -28,6 +28,21 @@ Inside `site/`:
   built with absolute base paths `/demos/oralpilot/`, `/demos/soma/`.
 - `media/` — solution card slides (`soma-1..5.jpg`, `oralpilot-1..5.jpg`).
 
+## SEO
+- Every page head has canonical, hreflang (ko/en/x-default), Open Graph and
+  Twitter tags with **absolute `https://a3gent.com/…` URLs** — canonical is
+  what keeps the mohazi.com/a3gent/ copy from counting as a duplicate. Body
+  links stay relative. The home pages also carry Organization/WebSite JSON-LD.
+- A new page needs the same head block and an entry (with its ko/en pair) in
+  `sitemap.xml`; bump `<lastmod>` when content changes.
+- Share images: `media/og-ko.jpg`, `media/og-en.jpg` (1200×630);
+  `media/logo-512.png` is the JSON-LD logo.
+- `google*.html`, `naver*.html` at the root are Search Console / 네이버
+  서치어드바이저 ownership files — do not delete.
+- Caddy (a3gent.com block) compresses responses, sends `X-Robots-Tag: noindex`
+  for the demo apps under `/demos/<demo>/` (search should land on
+  `/viewer/<demo>/`), and caches `media/` and the hashed `_next/static/` assets.
+
 ## Contact form
 The modal posts to `/api/inquiry`, which Caddy proxies to everynote
 (ELIS, `apps/everynote/src/app/api/inquiry/route.ts`): spam/injection
