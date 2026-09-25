@@ -150,6 +150,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .kicker { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 14px; }
 .section-head h1, .section-head h2 { font-size: clamp(1.6rem, 3.4vw, 2.35rem); font-weight: 800; }
 .section-lede { margin-top: 16px; color: var(--muted); font-size: 1.05rem; }
+.section-head-wide { max-width: none; }
+.section-head-wide .section-lede { max-width: 720px; }
 
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
