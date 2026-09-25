@@ -184,17 +184,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ── About ──────────────────────────────────────────── */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.career { margin-top: 56px; border-top: 1px solid var(--line); }
-.career li {
-  display: grid; grid-template-columns: 160px 1fr; gap: 24px;
-  padding: 22px 0; border-bottom: 1px solid var(--line);
+.beliefs { border-top: 1px solid var(--line); }
+.beliefs li {
+  display: grid; grid-template-columns: 80px 1fr; gap: 24px;
+  padding: 26px 0; border-bottom: 1px solid var(--line);
 }
-.career-when { font-size: 14px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 2px; }
-.career strong { display: block; color: var(--ink); font-size: 1.05rem; }
-.career p { margin-top: 6px; color: var(--muted); font-size: 0.95rem; }
-.career-note { margin-top: 20px; color: var(--muted); font-size: 0.93rem; }
+.belief-no { font-size: 14px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 3px; }
+.beliefs strong { display: block; color: var(--ink); font-size: 1.15rem; }
+.beliefs p { margin-top: 6px; color: var(--muted); max-width: 720px; }
 @media (max-width: 1000px) { .grid-3 { grid-template-columns: 1fr; } }
-@media (max-width: 760px) { .career li { grid-template-columns: 1fr; gap: 6px; } }
+@media (max-width: 760px) { .beliefs li { grid-template-columns: 1fr; gap: 6px; } }
 
 /* ── Solutions ──────────────────────────────────────── */
 .solutions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
