@@ -56,4 +56,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/viewer/oralpilot/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/viewer/oralpilot/"/>
   </url>
+  <url>
+    <loc>https://a3gent.com/about/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/about/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/about/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/about/"/>
+  </url>
 </urlset>

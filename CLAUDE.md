@@ -23,6 +23,10 @@ Inside `site/`:
 - `viewer/<demo>/`, `en/viewer/<demo>/` — viewer pages: site header + an
   `<iframe>` of the demo. Relative links; depth matters.
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
+- `about/`, `en/about/` — About page (what a3gent does and does not do, the
+  lead engineer's career, principles). The lead is **anonymous** by choice:
+  employers are named, clients are generalised, the current employer is not
+  named. Keep it that way.
 - `demos/oralpilot/`, `demos/soma/` — **static builds** of the demo apps.
   Never edit by hand: change `src/<demo>` and run `publish.sh`. They are
   built with absolute base paths `/demos/oralpilot/`, `/demos/soma/`.
