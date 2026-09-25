@@ -1,12 +1,20 @@
 # a3gent.com
 
-Static site, served **directly from this directory** by Caddy — there is no
-build step. Editing a file changes the live site immediately (a3gent.com and,
-for the interim path, mohazi.com/a3gent/). Caddy's config lives in the ELIS
+Static site. Caddy serves **`site/` directly** — there is no build step for
+the site itself. Editing a file under `site/` changes the live site immediately
+(a3gent.com and, for the interim path, mohazi.com/a3gent/). Anything outside
+`site/` is not served. Caddy's config lives in the ELIS
 repo (`/home/master/dev/elis/Caddyfile`, a3gent.com block); deploying it
 needs sudo: the user runs `bash scripts/deploy-caddy.sh` there.
 
 ## Layout
+- `site/` — the web root. Paths below are relative to it.
+- `src/oralpilot/`, `src/soma/` — demo app sources, each its own git repo
+  (branch `self-host`, GitHub remotes), gitignored here.
+- `publish.sh` — `bash publish.sh oralpilot|soma` builds `src/<demo>` and
+  replaces `site/demos/<demo>/` only if the build succeeds.
+
+Inside `site/`:
 - `index.html`, `en/index.html` — landing (KO / EN). Same section structure;
   keep copy changes in both.
 - `style.css`, `ui.js` (reveal, counters, slideshows, inquiry modal),
@@ -16,10 +24,8 @@ needs sudo: the user runs `bash scripts/deploy-caddy.sh` there.
   `<iframe>` of the demo. Relative links; depth matters.
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
 - `demos/oralpilot/`, `demos/soma/` — **static builds** of the demo apps.
-  Never edit by hand: sources are in `/home/master/dev/demos-src/{oralpilot,soma}`
-  (branch `self-host`); rebuild with `npm run build:static` there and rsync
-  `out/` here (`chmod -R a+rX`, drop `brand/`). They are built with absolute
-  base paths `/demos/oralpilot/`, `/demos/soma/`.
+  Never edit by hand: change `src/<demo>` and run `publish.sh`. They are
+  built with absolute base paths `/demos/oralpilot/`, `/demos/soma/`.
 - `media/` — solution card slides (`soma-1..5.jpg`, `oralpilot-1..5.jpg`).
 
 ## Contact form
