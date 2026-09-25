@@ -23,10 +23,10 @@ Inside `site/`:
 - `viewer/<demo>/`, `en/viewer/<demo>/` — viewer pages: site header + an
   `<iframe>` of the demo. Relative links; depth matters.
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
-- `about/`, `en/about/` — About page: what a3gent does and does not do, five
-  building standards, and the direction it builds toward. Deliberately **no
-  résumé content** (career list, stats, schooling, employers) — keep it about
-  philosophy. Where the landing's capabilities cite past work, only Samsung
+- `about/`, `en/about/` — About page: what a3gent does and does not do, a
+  short "만드는 사람" summary (three credibility points, no timeline, dates,
+  schooling or employer list — it must not read like a résumé), five building
+  standards, and the direction it builds toward. The lead stays anonymous. Where the landing's capabilities cite past work, only Samsung
   Electronics is named; other employers and all clients stay generic, and
   the current employer is never mentioned.
 - `demos/oralpilot/`, `demos/soma/` — **static builds** of the demo apps.
