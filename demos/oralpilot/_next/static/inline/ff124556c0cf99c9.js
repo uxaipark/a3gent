@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("b:I[\"6efdf509a785\",[],\"default\",1]\n")

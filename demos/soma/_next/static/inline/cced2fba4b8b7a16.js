@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("5:I[\"593f344dc510\",[],\"GlobalErrorBoundary\",1]\n")

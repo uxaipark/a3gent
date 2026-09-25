@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("14:I[\"544a703b9824\",[],\"LanguageSwitch\",1]\n")

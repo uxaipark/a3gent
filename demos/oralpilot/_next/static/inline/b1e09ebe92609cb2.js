@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n")

@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("e:I[\"89c3cac48cb5\",[],\"StreamedIconsInsertion\",1]\n")

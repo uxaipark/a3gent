@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/demos/oralpilot/_next/static/css/index.C2V6eBRs.css\",\"style\"     ]\n")

@@ -1,0 +1,1 @@
+((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("3:[\"$\",\"$Lf\",null,{\"params\":\"$@10\",\"searchParams\":\"$@11\"}]\n")
