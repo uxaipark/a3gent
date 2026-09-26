@@ -25,7 +25,7 @@ Inside `site/`:
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
 - Solutions (landing `#solutions`, four cards, same order in the demo hub):
   SOMA and OralPilot have **live demos** (card → `viewer/<demo>/`);
-  Biosignal Platform and Bio-Signal Emulator have no live demo, so their
+  Bio-Signal IoT Platform and Bio-Signal Emulator have no live demo, so their
   card goes to a **screen demo** page, `solutions/<slug>/` and
   `en/solutions/<slug>/`: hero, key-screen tour, measured figures, specs,
   limits. The tour is `[data-tour]` in ui.js (one step at a time, prev/next,
