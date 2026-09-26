@@ -253,7 +253,7 @@
         <h2 id="stats-title">운영 규모 검증 결과</h2>
       </div>
       <div class="stats sol-stats" data-reveal><div class="stat"><b>2,100<small>명</small></b><span>동시 모니터링 환자</span></div><div class="stat"><b>2,000<small>대</small></b><span>게이트웨이 (약)</span></div><div class="stat"><b>11,000<small>/초</small></b><span>초당 기록 (약)</span></div><div class="stat"><b>12.5<small>%</small></b><span>서버 부하 — 코어 1개 기준</span></div></div>
-      <p class="stats-note">Bio-Signal Emulator로 측정한 부하 시험 값입니다(2026년 9월, Raspberry Pi 5 4코어·4 GB, 메모리 약 150~176 MB). 실제 병원 환경 검증 전입니다.</p>
+      <p class="stats-note">Bio-Signal Emulator로 측정한 부하 시험 값입니다(2026년 9월, 소형 데스크탑 한 대 4코어·4 GB, 메모리 약 150~176 MB). 실제 병원 환경 검증 전입니다.</p>
 
       <div class="section-head sol-spec-head" data-reveal>
         <p class="kicker">사양</p>
@@ -263,7 +263,7 @@
         <tbody>
           <tr><th scope="row">측정 채널</th><td>ECG 250 Hz, 3축 가속도 50 Hz, PPG 100 Hz, 호흡 파형 25 Hz, 심박수·호흡수·SpO₂·체온·혈당 1초 1회, 페이스메이커 스파이크</td></tr>
           <tr><th scope="row">검증 규모</th><td>환자 2,100명 · 게이트웨이 약 2,000대 · 초당 기록 약 11,000개</td></tr>
-          <tr><th scope="row">서버 부하</th><td>Raspberry Pi 5(4코어, 4 GB) 기준 코어 1개의 약 12.5%, 메모리 약 150~176 MB</td></tr>
+          <tr><th scope="row">서버 부하</th><td>소형 데스크탑(4코어, 4 GB) 기준 코어 1개의 약 12.5%, 메모리 약 150~176 MB</td></tr>
           <tr><th scope="row">전송</th><td>게이트웨이당 TCP 1개, 200 ms 프레임, CRC-32, 빠진 프레임 재전송 요청</td></tr>
           <tr><th scope="row">저장</th><td>환자 1명 시간당 약 3.6 MB(비압축), gzip 시 약 57%</td></tr>
           <tr><th scope="row">무결성</th><td>기록별 CRC-32, 파일별 CRC-32·SHA-256 봉인, 백업·복원 SHA-256 검증</td></tr>

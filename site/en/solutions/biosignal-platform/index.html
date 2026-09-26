@@ -253,7 +253,7 @@
         <h2 id="stats-title">Operating-scale results</h2>
       </div>
       <div class="stats sol-stats" data-reveal><div class="stat"><b>2,100<small></small></b><span>patients monitored at once</span></div><div class="stat"><b>2,000<small></small></b><span>gateways (approx.)</span></div><div class="stat"><b>11,000<small>/s</small></b><span>records per second (approx.)</span></div><div class="stat"><b>12.5<small>%</small></b><span>server load, on one core</span></div></div>
-      <p class="stats-note">Load-test figures measured with Bio-Signal Emulator (September 2026, Raspberry Pi 5, 4 cores, 4 GB; about 150–176 MB of memory). Not yet validated in a real hospital.</p>
+      <p class="stats-note">Load-test figures measured with Bio-Signal Emulator (September 2026, one small desktop computer, 4 cores, 4 GB; about 150–176 MB of memory). Not yet validated in a real hospital.</p>
 
       <div class="section-head sol-spec-head" data-reveal>
         <p class="kicker">Specifications</p>
@@ -263,7 +263,7 @@
         <tbody>
           <tr><th scope="row">Channels</th><td>ECG 250 Hz, 3-axis acceleration 50 Hz, PPG 100 Hz, respiration waveform 25 Hz; heart rate, respiration rate, SpO₂, temperature and glucose once per second; pacemaker spikes</td></tr>
           <tr><th scope="row">Tested scale</th><td>2,100 patients · about 2,000 gateways · about 11,000 records per second</td></tr>
-          <tr><th scope="row">Server load</th><td>About 12.5% of one core on a Raspberry Pi 5 (4 cores, 4 GB); about 150–176 MB of memory</td></tr>
+          <tr><th scope="row">Server load</th><td>About 12.5% of one core on a small desktop computer (4 cores, 4 GB); about 150–176 MB of memory</td></tr>
           <tr><th scope="row">Transport</th><td>One TCP connection per gateway, 200 ms frames, CRC-32, retransmission requests for missing frames</td></tr>
           <tr><th scope="row">Storage</th><td>About 3.6 MB per patient-hour uncompressed; about 57% with gzip</td></tr>
           <tr><th scope="row">Integrity</th><td>CRC-32 per record, CRC-32 and SHA-256 seal per file, SHA-256 checks on backup and restore</td></tr>

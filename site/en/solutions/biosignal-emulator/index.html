@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bio-Signal Emulator — Load testing for remote patient monitoring</title>
-<meta name="description" content="An emulator that recreates a whole hospital on one Raspberry Pi: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
+<meta name="description" content="An emulator that recreates a whole hospital on one small desktop computer: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
 <link rel="canonical" href="https://a3gent.com/en/solutions/biosignal-emulator/">
 <link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-emulator/">
 <link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="a3gent">
 <meta property="og:url" content="https://a3gent.com/en/solutions/biosignal-emulator/">
 <meta property="og:title" content="Bio-Signal Emulator — Load testing for remote patient monitoring">
-<meta property="og:description" content="An emulator that recreates a whole hospital on one Raspberry Pi: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
+<meta property="og:description" content="An emulator that recreates a whole hospital on one small desktop computer: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
 <meta property="og:image" content="https://a3gent.com/media/og-en.jpg">
@@ -42,7 +42,7 @@
         <div>
           <div class="solution-top"><span class="tag">Remote Monitoring · Test Infrastructure</span><span class="status">Screen demo · Testing &amp; development</span></div>
           <h1 id="sol-title">Bio-Signal Emulator</h1>
-          <p class="sol-lede">A whole hospital, recreated on a single Raspberry Pi. An emulator for testing remote patient monitoring systems at operating scale before they go onto a real ward.</p>
+          <p class="sol-lede">A whole hospital, recreated on a single small desktop computer. An emulator for testing remote patient monitoring systems at operating scale before they go onto a real ward.</p>
           <ul class="facts">
           <li>Thousands of virtual patients wear ECG and SpO₂ patches and move between wards and exam rooms</li>
           <li>Virtual BLE gateways on every floor send the signals to the collection server every 200 ms</li>
@@ -246,7 +246,7 @@
         <h2 id="stats-title">Operating-scale results</h2>
       </div>
       <div class="stats sol-stats" data-reveal><div class="stat"><b>2,050<small></small></b><span>patches monitored at once (2,000 in hospital + 50 outpatient)</span></div><div class="stat"><b>2,124<small></small></b><span>virtual BLE gateways</span></div><div class="stat"><b>3,350<small>/s</small></b><span>packets sent · 2.0 MB/s</span></div><div class="stat"><b>37<small>h</small></b><span>continuous run · 520M packets</span></div></div>
-      <p class="stats-note">Measured on the production unit: Raspberry Pi 5 (4 cores, 16 GB), 2026-09-26. About 13% load per 200 ms cycle, zero cycle overruns.</p>
+      <p class="stats-note">Measured on the production unit: one small desktop computer (4 cores, 16 GB), 2026-09-26. About 13% load per 200 ms cycle, zero cycle overruns.</p>
 
       <div class="section-head sol-spec-head" data-reveal>
         <p class="kicker">Specifications</p>
@@ -262,7 +262,7 @@
           <tr><th scope="row">Transport</th><td>TCP per gateway, 200 ms frames, CRC-32, NACK retransmission, store-and-forward</td></tr>
           <tr><th scope="row">Validation</th><td>Ground-truth capture and comparison, strict receiver, 10 corrupted-frame types, connection-storm and half-open drills</td></tr>
           <tr><th scope="row">EMR</th><td>20 virtual institutions: FHIR R4/STU3, HL7 v2.3–2.5.1, CDA R2, REST, EUC-KR XML</td></tr>
-          <tr><th scope="row">Hardware</th><td>Raspberry Pi 5 recommended (runs on Pi 4, Linux, macOS); Python, FastAPI, SQLite</td></tr>
+          <tr><th scope="row">Hardware</th><td>One small desktop computer (4 cores, 16 GB class; Linux or macOS); Python, FastAPI, SQLite</td></tr>
           <tr><th scope="row">Install</th><td>Release package and install script to a systemd service; optional kiosk mode</td></tr>
         </tbody>
       </table>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bio-Signal Emulator — 원격 환자 모니터링 운영 규모 시험 에뮬레이터</title>
-<meta name="description" content="병원 하나를 라즈베리파이 한 대로 재현하는 에뮬레이터. 수천 명의 가상 환자와 BLE 게이트웨이, 가상 EMR 20곳으로 원격 모니터링 시스템을 병동 투입 전에 운영 규모로 시험합니다.">
+<meta name="description" content="병원 하나를 소형 데스크탑 한 대로 재현하는 에뮬레이터. 수천 명의 가상 환자와 BLE 게이트웨이, 가상 EMR 20곳으로 원격 모니터링 시스템을 병동 투입 전에 운영 규모로 시험합니다.">
 <link rel="canonical" href="https://a3gent.com/solutions/biosignal-emulator/">
 <link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-emulator/">
 <link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="a3gent">
 <meta property="og:url" content="https://a3gent.com/solutions/biosignal-emulator/">
 <meta property="og:title" content="Bio-Signal Emulator — 원격 환자 모니터링 운영 규모 시험 에뮬레이터">
-<meta property="og:description" content="병원 하나를 라즈베리파이 한 대로 재현하는 에뮬레이터. 수천 명의 가상 환자와 BLE 게이트웨이, 가상 EMR 20곳으로 원격 모니터링 시스템을 병동 투입 전에 운영 규모로 시험합니다.">
+<meta property="og:description" content="병원 하나를 소형 데스크탑 한 대로 재현하는 에뮬레이터. 수천 명의 가상 환자와 BLE 게이트웨이, 가상 EMR 20곳으로 원격 모니터링 시스템을 병동 투입 전에 운영 규모로 시험합니다.">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:image" content="https://a3gent.com/media/og-ko.jpg">
@@ -42,7 +42,7 @@
         <div>
           <div class="solution-top"><span class="tag">Remote Monitoring · Test Infrastructure</span><span class="status">스크린 데모 · 시험·개발용</span></div>
           <h1 id="sol-title">Bio-Signal Emulator</h1>
-          <p class="sol-lede">병원 하나를 통째로, 라즈베리파이 한 대에서 재현합니다. 원격 환자 모니터링 시스템을 실제 병동에 들어가기 전에 운영 규모로 시험하기 위한 에뮬레이터입니다.</p>
+          <p class="sol-lede">병원 하나를 통째로, 소형 데스크탑 한 대에서 재현합니다. 원격 환자 모니터링 시스템을 실제 병동에 들어가기 전에 운영 규모로 시험하기 위한 에뮬레이터입니다.</p>
           <ul class="facts">
           <li>수천 명의 가상 환자가 ECG·SpO₂ 패치를 달고 병동과 검사실을 이동</li>
           <li>층마다 설치된 가상 BLE 게이트웨이가 200 ms마다 수집 서버로 신호 전송</li>
@@ -246,7 +246,7 @@
         <h2 id="stats-title">운영 규모 검증 결과</h2>
       </div>
       <div class="stats sol-stats" data-reveal><div class="stat"><b>2,050<small>개</small></b><span>동시 모니터링 패치 (병원 2,000 + 원외 50)</span></div><div class="stat"><b>2,124<small>대</small></b><span>가상 BLE 게이트웨이</span></div><div class="stat"><b>3,350<small>/초</small></b><span>전송 패킷 · 2.0 MB/s</span></div><div class="stat"><b>37<small>시간</small></b><span>무중단 누적 · 5.2억 패킷</span></div></div>
-      <p class="stats-note">운영 장비 실측 — Raspberry Pi 5 (4코어, 16 GB), 2026-09-26. 200 ms 주기 부하 약 13%, 주기 초과 0회.</p>
+      <p class="stats-note">운영 장비 실측 — 소형 데스크탑 한 대 (4코어, 16 GB), 2026-09-26. 200 ms 주기 부하 약 13%, 주기 초과 0회.</p>
 
       <div class="section-head sol-spec-head" data-reveal>
         <p class="kicker">사양</p>
@@ -262,7 +262,7 @@
           <tr><th scope="row">전송</th><td>게이트웨이별 TCP, 200 ms 프레임, CRC-32, NACK 재전송, 저장 후 전송</td></tr>
           <tr><th scope="row">검증</th><td>정답 캡처·대조 도구, 엄격 수신기, 오염 프레임 10종, 연결 폭주·반열림 드릴</td></tr>
           <tr><th scope="row">EMR</th><td>가상 의료기관 20곳 — FHIR R4/STU3, HL7 v2.3~2.5.1, CDA R2, REST, EUC-KR XML</td></tr>
-          <tr><th scope="row">장비</th><td>Raspberry Pi 5 권장 (Pi 4 / Linux / macOS 동작), Python · FastAPI · SQLite</td></tr>
+          <tr><th scope="row">장비</th><td>소형 데스크탑 한 대 (4코어·16 GB급, Linux / macOS 동작), Python · FastAPI · SQLite</td></tr>
           <tr><th scope="row">설치</th><td>릴리스 패키지 + 설치 스크립트 → systemd 서비스, 키오스크 모드 선택</td></tr>
         </tbody>
       </table>
