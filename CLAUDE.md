@@ -34,6 +34,9 @@ Inside `site/`:
   `media/<slug>/tNN.jpg` thumbnails (320×200), card slides
   `media/<slug>-1..5.jpg` (1200×750). Copy comes from the solutions' own
   intro material — don't add claims beyond it.
+- `media/` is served with a one-day browser cache: when you replace an image
+  under the same name, add or bump a `?v=N` on every URL that points to it
+  (cards in the landing and demo hub, solution pages).
 - `about/`, `en/about/` — About page: what a3gent does and does not do, a
   short "만드는 사람" summary (three credibility points, no timeline, dates,
   schooling or employer list — it must not read like a résumé), five building
