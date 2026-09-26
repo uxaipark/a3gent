@@ -23,6 +23,17 @@ Inside `site/`:
 - `viewer/<demo>/`, `en/viewer/<demo>/` — viewer pages: site header + an
   `<iframe>` of the demo. Relative links; depth matters.
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
+- Solutions (landing `#solutions`, four cards, same order in the demo hub):
+  SOMA and OralPilot have **live demos** (card → `viewer/<demo>/`);
+  Biosignal Platform and Bio-Signal Emulator have no live demo, so their
+  card goes to a **screen demo** page, `solutions/<slug>/` and
+  `en/solutions/<slug>/`: hero, key-screen tour, measured figures, specs,
+  limits. The tour is `[data-tour]` in ui.js (one step at a time, prev/next,
+  thumbnail strip, arrow keys, `#screen-NN` deep links; without JS the steps
+  are simply listed). Images: `media/<slug>/NN.jpg` (1600 px wide),
+  `media/<slug>/tNN.jpg` thumbnails (320×200), card slides
+  `media/<slug>-1..5.jpg` (1200×750). Copy comes from the solutions' own
+  intro material — don't add claims beyond it.
 - `about/`, `en/about/` — About page: what a3gent does and does not do, a
   short "만드는 사람" summary (three credibility points, no timeline, dates,
   schooling or employer list — it must not read like a résumé), five building
@@ -50,9 +61,11 @@ Inside `site/`:
   `/viewer/<demo>/`), and caches `media/` and the hashed `_next/static/` assets.
 
 ## Contact form
-The `<dialog id="inquiry">` markup is **duplicated** in `index.html` and
-`about/index.html` (and their `en/` pairs) so About's button opens it in place;
-change all four together. Any `[data-inquiry]` element opens it (ui.js).
+The dialog markup lives only in `partials/inquiry-ko.html` / `inquiry-en.html`.
+Any page with a `[data-inquiry]` button gets it: ui.js fetches the partial for
+the page's `lang` (resolved against the page's `style.css` link), queues an
+early click, and falls back to the landing's `#contact` if the fetch fails.
+Include `laser.js` on the page for the opening transition.
 
 The modal posts to `/api/inquiry`, which Caddy proxies to everynote
 (ELIS, `apps/everynote/src/app/api/inquiry/route.ts`): spam/injection

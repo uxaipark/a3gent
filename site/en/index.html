@@ -117,7 +117,7 @@
       <div class="section-head" data-reveal>
         <p class="kicker">01 · Built solutions</p>
         <h2 id="solutions-title">Start from proven solutions</h2>
-        <p class="section-lede">Every solution can be reviewed hands-on in a public demo. On adoption, scope and validation criteria are agreed for your environment.</p>
+        <p class="section-lede">SOMA and OralPilot can be tried in a live demo, the others in a screen demo built around their key screens. On adoption, scope and validation criteria are agreed for your environment.</p>
       </div>
 
       <div class="solutions">
@@ -158,8 +158,45 @@
           <a class="link-out" href="viewer/oralpilot/">Open the demo <span aria-hidden="true">→</span></a>
         </div>
         </article>
+        <article class="solution" data-reveal>
+          <div class="shot-wrap slides" data-slides><figure class="slide is-on"><img src="../media/biosignal-platform-1.jpg" alt="Biosignal Platform screen — Central monitor" loading="eager" decoding="async" width="1200" height="750"><figcaption>Central monitor</figcaption></figure><figure class="slide"><img src="../media/biosignal-platform-2.jpg" alt="Biosignal Platform screen — Patient live window" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Patient live window</figcaption></figure><figure class="slide"><img src="../media/biosignal-platform-3.jpg" alt="Biosignal Platform screen — Hospital map" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Hospital map</figcaption></figure><figure class="slide"><img src="../media/biosignal-platform-4.jpg" alt="Biosignal Platform screen — Alarms" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Alarms</figcaption></figure><figure class="slide"><img src="../media/biosignal-platform-5.jpg" alt="Biosignal Platform screen — EMR integration" loading="lazy" decoding="async" width="1200" height="750"><figcaption>EMR integration</figcaption></figure><div class="dots" role="tablist"><button type="button" class="dot is-on" aria-label="1"></button><button type="button" class="dot" aria-label="2"></button><button type="button" class="dot" aria-label="3"></button><button type="button" class="dot" aria-label="4"></button><button type="button" class="dot" aria-label="5"></button></div></div>
+          <div class="body">
+          <div class="solution-top">
+            <span class="tag">Wearable Monitoring · Hospital Platform</span>
+            <span class="status">Screen demo · Load-tested</span>
+          </div>
+          <h3>Biosignal Platform</h3>
+          <p class="solution-desc">A hospital monitoring platform that collects vital signs from inpatients&#x27; wearable patches in real time, with alarms, location, records and EMR integration in one web interface.</p>
+          <ul class="facts">
+            <li>Central monitors by ward, room and gateway; live waveforms per patient</li>
+            <li>Four-level alarms; patients and gateways on the hospital map</li>
+            <li>Sealed waveform storage with NAS/SFTP backup</li>
+            <li>2,100 patients on a single Raspberry Pi 5 (load test)</li>
+          </ul>
+          <a class="link-out" href="solutions/biosignal-platform/">Explore the screens <span aria-hidden="true">→</span></a>
+        </div>
+        </article>
+
+        <article class="solution" data-reveal>
+          <div class="shot-wrap slides" data-slides><figure class="slide is-on"><img src="../media/biosignal-emulator-1.jpg" alt="Bio-Signal Emulator screen — Operations dashboard" loading="eager" decoding="async" width="1200" height="750"><figcaption>Operations dashboard</figcaption></figure><figure class="slide"><img src="../media/biosignal-emulator-2.jpg" alt="Bio-Signal Emulator screen — Central station" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Central station</figcaption></figure><figure class="slide"><img src="../media/biosignal-emulator-3.jpg" alt="Bio-Signal Emulator screen — Hospital floor plans" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Hospital floor plans</figcaption></figure><figure class="slide"><img src="../media/biosignal-emulator-4.jpg" alt="Bio-Signal Emulator screen — Bedside viewer" loading="lazy" decoding="async" width="1200" height="750"><figcaption>Bedside viewer</figcaption></figure><figure class="slide"><img src="../media/biosignal-emulator-5.jpg" alt="Bio-Signal Emulator screen — EMR integration testing" loading="lazy" decoding="async" width="1200" height="750"><figcaption>EMR integration testing</figcaption></figure><div class="dots" role="tablist"><button type="button" class="dot is-on" aria-label="1"></button><button type="button" class="dot" aria-label="2"></button><button type="button" class="dot" aria-label="3"></button><button type="button" class="dot" aria-label="4"></button><button type="button" class="dot" aria-label="5"></button></div></div>
+          <div class="body">
+          <div class="solution-top">
+            <span class="tag">Remote Monitoring · Test Infrastructure</span>
+            <span class="status">Screen demo · Testing &amp; development</span>
+          </div>
+          <h3>Bio-Signal Emulator</h3>
+          <p class="solution-desc">A hospital emulator for testing remote patient monitoring at operating scale before it reaches the ward: thousands of virtual patients, gateways and 20 virtual EMRs on one Raspberry Pi.</p>
+          <ul class="facts">
+            <li>2,050 virtual patches and 2,124 BLE gateways transmitting at once</li>
+            <li>Generated hospital floor plans, central monitor and bedside viewer</li>
+            <li>14 scenario presets: faults, outages, arrhythmias and more</li>
+            <li>EMR integration testing against 20 virtual institutions</li>
+          </ul>
+          <a class="link-out" href="solutions/biosignal-emulator/">Explore the screens <span aria-hidden="true">→</span></a>
+        </div>
+        </article>
       </div>
-      <p class="solutions-more"><a href="../demos/">All demos <span aria-hidden="true">→</span></a></p>
+      <p class="solutions-more"><a href="../demos/en/">All demos <span aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
@@ -351,34 +388,6 @@
 
 </main>
 
-<dialog class="inquiry" id="inquiry" aria-labelledby="inquiry-title">
-  <form class="inquiry-form" novalidate data-lang="en">
-    <button type="button" class="inquiry-close" data-inquiry-close aria-label="Close">×</button>
-    <p class="kicker">Talk to us</p>
-    <h3 id="inquiry-title">Send an inquiry</h3>
-    <p class="inquiry-lede">Tell us the problem you need solved and the systems you operate today; we will review it and reply.</p>
-    <div class="inquiry-grid">
-      <label><span>Name <span class="req">*</span></span><input name="name" required maxlength="80" autocomplete="name"></label>
-      <label><span>Company</span><input name="company" maxlength="120" autocomplete="organization"></label>
-      <label><span>Email <span class="req">*</span></span><input name="email" type="email" required maxlength="200" autocomplete="email"></label>
-      <label><span>Phone</span><input name="phone" type="tel" maxlength="40" autocomplete="tel"></label>
-    </div>
-    <label><span>Message <span class="req">*</span> <small class="hint">(as much detail as possible, min. 200 characters)</small></span><textarea name="message" required minlength="200" maxlength="4000" rows="6" placeholder="Describe the problem, the systems and data involved, timing and budget range in as much detail as you can."></textarea><span class="inquiry-count" data-count-for="message"><b>0</b> / 200 characters</span></label>
-    <label class="inquiry-hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
-    <label class="inquiry-consent"><input type="checkbox" name="consent" required><span>I agree that my contact details are used only to respond to this inquiry.</span></label>
-    <p class="inquiry-status" role="status" aria-live="polite"></p>
-    <div class="inquiry-actions">
-      <button type="button" class="btn btn-plain" data-inquiry-close>Cancel</button>
-      <button type="submit" class="btn btn-primary">Send<span class="arrow">→</span></button>
-    </div>
-  </form>
-  <div class="inquiry-done" hidden>
-    <p class="kicker">Received</p>
-    <h3>Your inquiry has been received</h3>
-    <p>We will reply to the contact details you provided.</p>
-    <button type="button" class="btn btn-primary" data-inquiry-close>Close</button>
-  </div>
-</dialog>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">

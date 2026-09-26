@@ -123,10 +123,47 @@
  * form as JSON, and swaps in the "received" panel. The API path follows the
  * page: /api/inquiry on a3gent.com, /a3gent/api/inquiry on the interim
  * mohazi.com path — Caddy proxies both to the same route.
+ *
+ * The dialog lives in one place, partials/inquiry-<lang>.html; any page
+ * with a [data-inquiry] button fetches it on load (resolved against the
+ * page's style.css link, so it works at any depth and under /a3gent/).
+ * A click before it arrives is queued; if it can't be fetched, the button
+ * falls back to the landing's contact section.
  */
 (function () {
-  var dlg = document.getElementById("inquiry");
-  if (!dlg || typeof dlg.showModal !== "function") return;
+  var openers = document.querySelectorAll("[data-inquiry]");
+  if (!openers.length || typeof HTMLDialogElement !== "function") return;
+  var css = document.querySelector('link[rel="stylesheet"][href$="style.css"]');
+  var root = css ? css.href.replace(/style\.css$/, "") : "/";
+  var pageLang = (document.documentElement.lang || "ko").slice(0, 2) === "en" ? "en" : "ko";
+  var queued = null, ready = false;
+  function early(e) {
+    if (ready) return;
+    e.preventDefault();
+    queued = e.currentTarget;
+  }
+  openers.forEach(function (el) { el.addEventListener("click", early); });
+  var existing = document.getElementById("inquiry");
+  if (existing) { setup(existing); return; }
+  fetch(root + "partials/inquiry-" + pageLang + ".html")
+    .then(function (res) { if (!res.ok) throw new Error(res.status); return res.text(); })
+    .then(function (html) {
+      var box = document.createElement("div");
+      box.innerHTML = html;
+      var d = box.querySelector("dialog");
+      document.body.insertBefore(d, document.querySelector(".site-footer"));
+      setup(d);
+    })
+    .catch(function () {
+      var back = root + (pageLang === "en" ? "en/" : "") + "#contact";
+      openers.forEach(function (el) {
+        el.removeEventListener("click", early);
+        el.addEventListener("click", function () { location.href = back; });
+      });
+      if (queued) location.href = back;
+    });
+
+  function setup(dlg) {
   var form = dlg.querySelector("form");
   var done = dlg.querySelector(".inquiry-done");
   var status = form.querySelector(".inquiry-status");
@@ -186,9 +223,11 @@
     if (window.a3Laser && src) { opening = true; window.a3Laser(src, landing(), reveal); }
     else reveal();
   }
-  document.querySelectorAll("[data-inquiry]").forEach(function (el) {
+  openers.forEach(function (el) {
     el.addEventListener("click", function (e) { e.preventDefault(); open(el); });
   });
+  ready = true;
+  if (queued) open(queued);
   dlg.querySelectorAll("[data-inquiry-close]").forEach(function (el) {
     el.addEventListener("click", function () { dlg.close(); });
   });
@@ -229,5 +268,83 @@
         status.classList.add("is-error");
       })
       .then(function () { submit.disabled = false; });
+  });
+  }
+})();
+
+/* screen tour -------------------------------------------------------------
+ * Solution pages without a live demo walk through key screens. Without JS
+ * every step is listed in order; with it, one step shows at a time with
+ * previous/next buttons, a thumbnail strip and arrow keys. #screen-NN in
+ * the URL opens that step.
+ */
+(function () {
+  document.querySelectorAll("[data-tour]").forEach(function (tour) {
+    var steps = [].slice.call(tour.querySelectorAll(".tour-step"));
+    if (steps.length < 2) return;
+    var en = tour.getAttribute("data-lang") === "en";
+    var cur = -1;
+
+    var nav = document.createElement("div");
+    nav.className = "tour-nav";
+    var prev = document.createElement("button");
+    var next = document.createElement("button");
+    var count = document.createElement("span");
+    prev.type = next.type = "button";
+    prev.className = next.className = "btn btn-plain tour-btn";
+    prev.textContent = en ? "← Previous" : "← 이전";
+    next.textContent = en ? "Next →" : "다음 →";
+    count.className = "tour-count";
+    count.setAttribute("aria-live", "polite");
+    nav.appendChild(prev); nav.appendChild(count); nav.appendChild(next);
+
+    var strip = document.createElement("div");
+    strip.className = "tour-thumbs";
+    var thumbs = steps.map(function (step, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "tour-thumb";
+      var title = step.querySelector("h3").textContent;
+      b.setAttribute("aria-label", (i + 1) + ". " + title);
+      var img = document.createElement("img");
+      img.src = step.getAttribute("data-thumb");
+      img.alt = ""; img.loading = "lazy"; img.width = 320; img.height = 200;
+      var cap = document.createElement("span");
+      cap.textContent = title;
+      b.appendChild(img); b.appendChild(cap);
+      b.addEventListener("click", function () { show(i, true); });
+      strip.appendChild(b);
+      return b;
+    });
+
+    function show(i, user) {
+      i = (i + steps.length) % steps.length;
+      if (i === cur) return;
+      cur = i;
+      steps.forEach(function (s, k) { s.classList.toggle("is-on", k === i); });
+      thumbs.forEach(function (b, k) { if (k === i) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); });
+      count.textContent = (i < 9 ? "0" : "") + (i + 1) + " / " + (steps.length < 10 ? "0" : "") + steps.length;
+      // keep the active thumbnail in view without scrolling the page
+      var b = thumbs[i];
+      var left = b.offsetLeft - (strip.clientWidth - b.offsetWidth) / 2;
+      strip.scrollTo ? strip.scrollTo({ left: left, behavior: user ? "smooth" : "auto" }) : (strip.scrollLeft = left);
+      if (user && history.replaceState) history.replaceState(null, "", "#" + steps[i].id);
+    }
+    prev.addEventListener("click", function () { show(cur - 1, true); });
+    next.addEventListener("click", function () { show(cur + 1, true); });
+    tour.addEventListener("keydown", function (e) {
+      if (e.target.closest && e.target.closest("input, textarea")) return;
+      if (e.key === "ArrowLeft") { e.preventDefault(); show(cur - 1, true); }
+      if (e.key === "ArrowRight") { e.preventDefault(); show(cur + 1, true); }
+    });
+    tour.setAttribute("tabindex", "-1");
+
+    tour.appendChild(nav);
+    tour.appendChild(strip);
+    tour.classList.add("is-ready");
+    var start = 0;
+    var m = /^#screen-(\d+)$/.exec(location.hash);
+    if (m) start = Math.min(steps.length, Math.max(1, parseInt(m[1], 10))) - 1;
+    show(start, false);
   });
 })();

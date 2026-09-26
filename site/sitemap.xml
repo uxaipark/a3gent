@@ -70,4 +70,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/about/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/about/"/>
   </url>
+  <url>
+    <loc>https://a3gent.com/solutions/biosignal-platform/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-platform/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-platform/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-platform/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/solutions/biosignal-platform/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-platform/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-platform/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-platform/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/solutions/biosignal-emulator/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-emulator/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-emulator/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/solutions/biosignal-emulator/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-emulator/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-emulator/"/>
+  </url>
 </urlset>

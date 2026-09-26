@@ -1,0 +1,28 @@
+<dialog class="inquiry" id="inquiry" aria-labelledby="inquiry-title">
+  <form class="inquiry-form" novalidate data-lang="en">
+    <button type="button" class="inquiry-close" data-inquiry-close aria-label="Close">×</button>
+    <p class="kicker">Talk to us</p>
+    <h3 id="inquiry-title">Send an inquiry</h3>
+    <p class="inquiry-lede">Tell us the problem you need solved and the systems you operate today; we will review it and reply.</p>
+    <div class="inquiry-grid">
+      <label><span>Name <span class="req">*</span></span><input name="name" required maxlength="80" autocomplete="name"></label>
+      <label><span>Company</span><input name="company" maxlength="120" autocomplete="organization"></label>
+      <label><span>Email <span class="req">*</span></span><input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+      <label><span>Phone</span><input name="phone" type="tel" maxlength="40" autocomplete="tel"></label>
+    </div>
+    <label><span>Message <span class="req">*</span> <small class="hint">(as much detail as possible, min. 200 characters)</small></span><textarea name="message" required minlength="200" maxlength="4000" rows="6" placeholder="Describe the problem, the systems and data involved, timing and budget range in as much detail as you can."></textarea><span class="inquiry-count" data-count-for="message"><b>0</b> / 200 characters</span></label>
+    <label class="inquiry-hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+    <label class="inquiry-consent"><input type="checkbox" name="consent" required><span>I agree that my contact details are used only to respond to this inquiry.</span></label>
+    <p class="inquiry-status" role="status" aria-live="polite"></p>
+    <div class="inquiry-actions">
+      <button type="button" class="btn btn-plain" data-inquiry-close>Cancel</button>
+      <button type="submit" class="btn btn-primary">Send<span class="arrow">→</span></button>
+    </div>
+  </form>
+  <div class="inquiry-done" hidden>
+    <p class="kicker">Received</p>
+    <h3>Your inquiry has been received</h3>
+    <p>We will reply to the contact details you provided.</p>
+    <button type="button" class="btn btn-primary" data-inquiry-close>Close</button>
+  </div>
+</dialog>

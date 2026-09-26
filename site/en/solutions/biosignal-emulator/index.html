@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio-Signal Emulator — Load testing for remote patient monitoring</title>
+<meta name="description" content="An emulator that recreates a whole hospital on one Raspberry Pi: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
+<link rel="canonical" href="https://a3gent.com/en/solutions/biosignal-emulator/">
+<link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/biosignal-emulator/">
+<link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/">
+<link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-emulator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="a3gent">
+<meta property="og:url" content="https://a3gent.com/en/solutions/biosignal-emulator/">
+<meta property="og:title" content="Bio-Signal Emulator — Load testing for remote patient monitoring">
+<meta property="og:description" content="An emulator that recreates a whole hospital on one Raspberry Pi: thousands of virtual patients, BLE gateways and 20 virtual EMRs, to test remote monitoring systems at operating scale before they reach the ward.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:image" content="https://a3gent.com/media/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="a3gent — AI adoption without an in-house AI team">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../../" aria-label="a3gent">a3gent</a>
+    <nav class="nav" aria-label="Main"><a href="../../#solutions" aria-current="page">Solutions</a><a href="../../#cases">Case studies</a><a href="../../#engagement">How to engage</a><a href="../../../demos/en/">Demos</a><a href="../../about/">About</a><a class="nav-cta" href="../../#contact">Talk to us</a><span class="lang" aria-label="Language"><a href="../../../solutions/biosignal-emulator/" lang="ko" hreflang="ko">KO</a><a href="./" aria-current="true" lang="en">EN</a></span></nav>
+  </div>
+</header>
+
+<main>
+  <section class="section sol-hero" aria-labelledby="sol-title">
+    <div class="wrap">
+      <p class="sol-crumb"><a href="../../#solutions">Solutions</a> <span aria-hidden="true">/</span> Bio-Signal Emulator</p>
+      <div class="sol-head">
+        <div>
+          <div class="solution-top"><span class="tag">Remote Monitoring · Test Infrastructure</span><span class="status">Screen demo · Testing &amp; development</span></div>
+          <h1 id="sol-title">Bio-Signal Emulator</h1>
+          <p class="sol-lede">A whole hospital, recreated on a single Raspberry Pi. An emulator for testing remote patient monitoring systems at operating scale before they go onto a real ward.</p>
+          <ul class="facts">
+          <li>Thousands of virtual patients wear ECG and SpO₂ patches and move between wards and exam rooms</li>
+          <li>Virtual BLE gateways on every floor send the signals to the collection server every 200 ms</li>
+          <li>Admissions and discharges, patch changes, gateway failures, network outages and arrhythmia episodes</li>
+          <li>Built-in EMRs of 20 virtual institutions, so commercial EMR integration is tested too</li>
+          </ul>
+          <div class="sol-actions">
+            <a class="btn btn-primary" href="#tour">View key screens<span class="arrow" aria-hidden="true">→</span></a>
+            <button type="button" class="btn btn-plain" data-inquiry>Talk to us</button>
+          </div>
+        </div>
+        <figure class="sol-cover"><img src="../../../media/biosignal-emulator/01.jpg" alt="Bio-Signal Emulator screen — Operations dashboard" width="1600" height="1000" decoding="async"></figure>
+      </div>
+      <div class="sol-audience"><h2>Built for</h2><ul><li>Remote-monitoring and collection-server teams</li><li>Central-monitor and viewer teams</li><li>Hospital IT and EMR integration</li><li>Medical-device test preparation</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="tour" aria-labelledby="tour-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Screen demo</p>
+        <h2 id="tour-title">Key screens</h2>
+        <p class="section-lede">In place of a live demo, 13 real screens walk through the main features. Use the previous and next buttons, the arrow keys or the strip below.</p>
+      </div>
+      <div class="tour" data-tour data-lang="en">
+    <ol class="tour-steps">
+      <li class="tour-step" id="screen-01" data-thumb="../../../media/biosignal-emulator/t01.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/01.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/01.jpg" alt="Bio-Signal Emulator screen — Operations dashboard" width="1600" height="1000" loading="eager" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">01 <span>/ 13</span></p>
+          <h3>Operations dashboard</h3>
+          <p>What the emulator is sending right now, and how much, on one screen.</p>
+          <ul class="facts">
+            <li>Transmission status, router connections, packet and data rates</li>
+            <li>Inpatient and outpatient counts, patch and gateway status</li>
+            <li>Network and gateway fault scenarios, artifact scenarios</li>
+            <li>Reception status reported by the router, live event log</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-02" data-thumb="../../../media/biosignal-emulator/t02.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/02.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/02.jpg" alt="Bio-Signal Emulator screen — Hospital floor plans" width="1600" height="1404" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">02 <span>/ 13</span></p>
+          <h3>Hospital floor plans</h3>
+          <p>Hospital size is derived from the number of patients to monitor: 2,000 patients means about 2,500 beds in three 20-storey buildings.</p>
+          <ul class="facts">
+            <li>Ten floor-plan archetypes chosen automatically by bed count</li>
+            <li>Room area, bed spacing and corridor width checked against Korean medical and building codes</li>
+            <li>Gateway coverage and dead zones, patients in transit</li>
+            <li>Floor plans exported as metric JSON for viewers to reuse</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-03" data-thumb="../../../media/biosignal-emulator/t03.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/03.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/03.jpg" alt="Bio-Signal Emulator screen — Room zoom" width="1600" height="1404" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">03 <span>/ 13</span></p>
+          <h3>Room zoom</h3>
+          <p>Bed positions and orientation, room numbers and the ceiling-mounted gateway, drawn inside each room.</p>
+          <ul class="facts">
+            <li>Click to zoom and drag to pan; pick a floor from the section view</li>
+            <li>Bed occupancy, with lead-off and no-signal highlighted</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-04" data-thumb="../../../media/biosignal-emulator/t04.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/04.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/04.jpg" alt="Bio-Signal Emulator screen — Central station" width="1600" height="1030" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">04 <span>/ 13</span></p>
+          <h3>Central station</h3>
+          <p>Clicking a gateway on the plan opens the central monitor for the patients connected to it.</p>
+          <ul class="facts">
+            <li>Waveforms: ECG II · Pleth · Resp</li>
+            <li>Numerics: HR · SpO₂ · RR · NIBP · Temp · GLU with alarm limits</li>
+            <li>Alarms coloured by priority: red for VFib, VT…; yellow for lead-off, AFib…</li>
+            <li>Grids from 2×1 to 6×8</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-05" data-thumb="../../../media/biosignal-emulator/t05.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/05.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/05.jpg" alt="Bio-Signal Emulator screen — Numeric board" width="1600" height="412" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">05 <span>/ 13</span></p>
+          <h3>Numeric board</h3>
+          <p>A numerics-only board for a whole ward at once, up to 16×10 (160 beds).</p>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-06" data-thumb="../../../media/biosignal-emulator/t06.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/06.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/06.jpg" alt="Bio-Signal Emulator screen — Bedside viewer" width="1600" height="1030" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">06 <span>/ 13</span></p>
+          <h3>Bedside viewer</h3>
+          <p>Clicking a central-station tile opens that patient&#x27;s bedside monitor.</p>
+          <ul class="facts">
+            <li>Standard 25 mm/s · 10 mm/mV</li>
+            <li>Alarm limits, 6-hour sparklines, trend table and patient events</li>
+            <li>Light and night modes</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-07" data-thumb="../../../media/biosignal-emulator/t07.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/07.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/07.jpg" alt="Bio-Signal Emulator screen — Patient monitoring" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">07 <span>/ 13</span></p>
+          <h3>Patient monitoring</h3>
+          <p>Pick a patient from the list to see live ECG, numerics and records together.</p>
+          <ul class="facts">
+            <li>Monitoring orders: prescribed days, D+n, time left, patch wear days</li>
+            <li>Switches to inject rhythms, episodes and lead-off</li>
+            <li>NEWS2 early-warning score</li>
+            <li>Admission record, exam schedule, movement and patch-change history</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-08" data-thumb="../../../media/biosignal-emulator/t08.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/08.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/08.jpg" alt="Bio-Signal Emulator screen — EMR integration testing" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">08 <span>/ 13</span></p>
+          <h3>EMR integration testing</h3>
+          <p>20 virtual institutions are built in so commercial EMR integration can be tested in advance.</p>
+          <ul class="facts">
+            <li>US, UK, Japan, Korea and more: FHIR R4/STU3, HL7 v2, CDA R2, REST, EUC-KR XML</li>
+            <li>Ten authentication methods; synthetic IDs that pass each country&#x27;s check digits</li>
+            <li>Per-site self-test, sample requests, fault injection and request logs</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-09" data-thumb="../../../media/biosignal-emulator/t09.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/09.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/09.jpg" alt="Bio-Signal Emulator screen — Scenario presets" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">09 <span>/ 13</span></p>
+          <h3>Scenario presets</h3>
+          <p>Fourteen representative scenarios, applied in one step.</p>
+          <ul class="facts">
+            <li>Fault-free baseline, daily ward routine, network failures, power outage and UPS</li>
+            <li>Gateway replacement, motion artifacts, multiple code blues, 2.4 GHz interference</li>
+            <li>Individual events injected at set times by trigger or script</li>
+            <li>Every setting change is logged and can be rolled back per run</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-10" data-thumb="../../../media/biosignal-emulator/t10.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/10.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/10.jpg" alt="Bio-Signal Emulator screen — Signal transmission" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">10 <span>/ 13</span></p>
+          <h3>Signal transmission</h3>
+          <p>Set the router address and channels, and switch on test drills.</p>
+          <ul class="facts">
+            <li>Store-and-forward, corrupted frames, ground-truth capture</li>
+            <li>Upload recorded ECG files (ATF/CSV) and transmit them as-is</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-11" data-thumb="../../../media/biosignal-emulator/t11.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/11.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/11.jpg" alt="Bio-Signal Emulator screen — Field test" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">11 <span>/ 13</span></p>
+          <h3>Field test</h3>
+          <p>After the network, devices, server and viewers are installed, send events to a chosen gateway or patient and check the display and alarm tones on site.</p>
+          <ul class="facts">
+            <li>13 event types in three priorities</li>
+            <li>Critical: VFib, VT, asystole / Warning: AFib, SVT, SpO₂ drop and more</li>
+            <li>Each event holds for a set time, then returns to normal</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-12" data-thumb="../../../media/biosignal-emulator/t12.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/12.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/12.jpg" alt="Bio-Signal Emulator screen — Data and logs" width="1600" height="1000" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">12 <span>/ 13</span></p>
+          <h3>Data and logs</h3>
+          <p>A registry of every patch issued, and the test data around it.</p>
+          <ul class="facts">
+            <li>Serials and patch IDs are never reused; issue and end times and reasons are kept</li>
+            <li>Ground-truth label summaries, settings history, SQLite query console</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tour-step" id="screen-13" data-thumb="../../../media/biosignal-emulator/t13.jpg">
+        <figure class="tour-shot"><a href="../../../media/biosignal-emulator/13.jpg" target="_blank" rel="noopener"><img src="../../../media/biosignal-emulator/13.jpg" alt="Bio-Signal Emulator screen — Protocol" width="1600" height="1051" loading="lazy" decoding="async"></a></figure>
+        <div class="tour-text">
+          <p class="tour-no">13 <span>/ 13</span></p>
+          <h3>Protocol</h3>
+          <p>An entry-point API describes the protocol, channels, endpoints and current settings in machine-readable form; a router can start receiving from that document alone.</p>
+          <ul class="facts">
+            <li>26 B frame header, 16 B records plus channels, CRC-32 trailer</li>
+            <li>Ten channels, including ECG 250/500 Hz, PPG 100 Hz and acceleration 50 Hz</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="stats-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Measured</p>
+        <h2 id="stats-title">Operating-scale results</h2>
+      </div>
+      <div class="stats sol-stats" data-reveal><div class="stat"><b>2,050<small></small></b><span>patches monitored at once (2,000 in hospital + 50 outpatient)</span></div><div class="stat"><b>2,124<small></small></b><span>virtual BLE gateways</span></div><div class="stat"><b>3,350<small>/s</small></b><span>packets sent · 2.0 MB/s</span></div><div class="stat"><b>37<small>h</small></b><span>continuous run · 520M packets</span></div></div>
+      <p class="stats-note">Measured on the production unit: Raspberry Pi 5 (4 cores, 16 GB), 2026-09-26. About 13% load per 200 ms cycle, zero cycle overruns.</p>
+
+      <div class="section-head sol-spec-head" data-reveal>
+        <p class="kicker">Specifications</p>
+        <h2>Key specifications</h2>
+      </div>
+      <table class="spec" data-reveal>
+        <tbody>
+          <tr><th scope="row">Rhythms</th><td>27, including NSR, brady/tachycardia, AF/AFL, PVC/PAC, VT/SVT, 1st–3rd degree AVB, bundle branch blocks, STEMI/ischaemia, pacing and malfunction, VFib</td></tr>
+          <tr><th scope="row">Physiology</th><td>Coupled respiration–RR–ECG amplitude–PPG, circadian and multi-day drift, electrode detach/attach transients</td></tr>
+          <tr><th scope="row">Patients</th><td>10,000 profiles, 24 diagnoses, comorbidities and allergies, implanted devices in about 6%</td></tr>
+          <tr><th scope="row">Devices</th><td>ECG patch, temperature patch, SpO₂ (fingertip, ring, wrist), CGM, assigned by symptoms</td></tr>
+          <tr><th scope="row">Patches</th><td>15.5-day battery, up to 14 days of wear, 3–14 day orders by acuity, new number on replacement</td></tr>
+          <tr><th scope="row">Transport</th><td>TCP per gateway, 200 ms frames, CRC-32, NACK retransmission, store-and-forward</td></tr>
+          <tr><th scope="row">Validation</th><td>Ground-truth capture and comparison, strict receiver, 10 corrupted-frame types, connection-storm and half-open drills</td></tr>
+          <tr><th scope="row">EMR</th><td>20 virtual institutions: FHIR R4/STU3, HL7 v2.3–2.5.1, CDA R2, REST, EUC-KR XML</td></tr>
+          <tr><th scope="row">Hardware</th><td>Raspberry Pi 5 recommended (runs on Pi 4, Linux, macOS); Python, FastAPI, SQLite</td></tr>
+          <tr><th scope="row">Install</th><td>Release package and install script to a systemd service; optional kiosk mode</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="limits-title">
+    <div class="wrap">
+      <aside class="scope-box" data-reveal>
+        <h2 id="limits-title">Limits and validation scope</h2>
+        <ul>
+          <li>ECG is single-channel (multi-channel and 12-lead under review).</li>
+          <li>Patch-side store-and-backfill during BLE drops is modelled only as loss for now.</li>
+          <li>No TLS or gateway authentication on the transport (assumes a test network).</li>
+          <li>Outpatient location is limited to home, out and dead-zone states.</li>
+        </ul>
+        <p class="sol-disclaimer">Not for medical use. This is testing, development and training software; all signals and patient and institution data are synthetic and must not be used for diagnosis or treatment. EMR format names refer to standards and conventions and imply no relationship with any company.</p>
+      </aside>
+      <p class="sol-related" data-reveal>See also: <a href="../biosignal-platform/">Biosignal Platform</a> — The hospital monitoring platform load-tested with this emulator</p>
+      <div class="contact-card" data-reveal>
+        <div>
+          <p class="contact-label">Talk to us</p>
+          <p class="contact-line">Let's review what adopting this solution would cover.</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-inquiry>Send an inquiry<span class="arrow" aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="wordmark">a3gent</span>
+    <span class="footer-tag">AI adoption without an in-house AI team.</span>
+    <span class="copy">© 2026 a3gent</span>
+  </div>
+</footer>
+<script src="../../../ui.js" defer></script>
+<script src="../../../laser.js" defer></script>
+</body>
+</html>
