@@ -23,17 +23,20 @@ Inside `site/`:
 - `viewer/<demo>/`, `en/viewer/<demo>/` — viewer pages: site header + an
   `<iframe>` of the demo. Relative links; depth matters.
 - `demos/index.html`, `demos/en/` — demo hub mirroring the landing's cards.
-- Solutions (landing `#solutions`, four cards, same order in the demo hub):
-  SOMA and OralPilot have **live demos** (card → `viewer/<demo>/`);
-  Bio-Signal IoT Platform and Bio-Signal Emulator have no live demo, so their
-  card goes to a **screen demo** page, `solutions/<slug>/` and
-  `en/solutions/<slug>/`: hero, key-screen tour, measured figures, specs,
-  limits. The tour is `[data-tour]` in ui.js (one step at a time, prev/next,
-  thumbnail strip, arrow keys, `#screen-NN` deep links; without JS the steps
-  are simply listed). Images: `media/<slug>/NN.jpg` (1600 px wide),
-  `media/<slug>/tNN.jpg` thumbnails (320×200), card slides
-  `media/<slug>-1..5.jpg` (1200×750). Copy comes from the solutions' own
-  intro material — don't add claims beyond it.
+- Solutions (landing `#solutions`, four cards, same order in the demo hub and
+  in the hero's domain cards). Every solution has a **screen-demo** page,
+  `solutions/<slug>/` and `en/solutions/<slug>/`: hero, key-screen tour,
+  figures, specs, limits. SOMA and OralPilot also have **live demos**
+  (`viewer/<demo>/`), so their card shows both links and their page leads
+  with "라이브 데모 열기"; Bio-Signal IoT Platform and Bio-Signal Emulator
+  have only the screen demo. The tour is `[data-tour]` in ui.js (one step at
+  a time in a fixed 16:10 frame, prev/next, thumbnail strip, arrow keys,
+  `#screen-NN` deep links; without JS the steps are simply listed).
+  Images: `media/<slug>/NN.jpg` + `tNN.jpg` thumbnails (320×200); SOMA and
+  OralPilot have per-language screenshots under `media/<slug>/<lang>/`,
+  captured from the live demos at 1600×1000. Card slides:
+  `media/<slug>-1..5.jpg` (1200×750). Copy comes from each solution's own
+  material (README, on-screen labels) — don't add claims beyond it.
 - `media/` is served with a one-day browser cache: when you replace an image
   under the same name, add or bump a `?v=N` on every URL that points to it
   (cards in the landing and demo hub, solution pages).

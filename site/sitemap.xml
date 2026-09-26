@@ -98,4 +98,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/biosignal-emulator/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/biosignal-emulator/"/>
   </url>
+  <url>
+    <loc>https://a3gent.com/solutions/soma/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/soma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/soma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/soma/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/solutions/soma/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/soma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/soma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/soma/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/solutions/oralpilot/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/oralpilot/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/solutions/oralpilot/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/solutions/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/solutions/oralpilot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/solutions/oralpilot/"/>
+  </url>
 </urlset>
