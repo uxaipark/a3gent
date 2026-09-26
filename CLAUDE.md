@@ -50,6 +50,10 @@ Inside `site/`:
   `/viewer/<demo>/`), and caches `media/` and the hashed `_next/static/` assets.
 
 ## Contact form
+The `<dialog id="inquiry">` markup is **duplicated** in `index.html` and
+`about/index.html` (and their `en/` pairs) so About's button opens it in place;
+change all four together. Any `[data-inquiry]` element opens it (ui.js).
+
 The modal posts to `/api/inquiry`, which Caddy proxies to everynote
 (ELIS, `apps/everynote/src/app/api/inquiry/route.ts`): spam/injection
 screening, 200-char minimum, storage as an Inquiry row + a note in the
