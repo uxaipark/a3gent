@@ -2,7 +2,8 @@
 
 Static site. Caddy serves **`site/` directly** — there is no build step for
 the site itself. Editing a file under `site/` changes the live site immediately
-(a3gent.com and, for the interim path, mohazi.com/a3gent/). Anything outside
+(a3gent.com; the old interim path mohazi.com/a3gent/… and mohazi.com/demos/…
+301 to the same path on a3gent.com). Anything outside
 `site/` is not served. Caddy's config lives in the ELIS
 repo (`/home/master/dev/elis/Caddyfile`, a3gent.com block); deploying it
 needs sudo: the user runs `bash scripts/deploy-caddy.sh` there.
@@ -54,7 +55,7 @@ Inside `site/`:
 ## SEO
 - Every page head has canonical, hreflang (ko/en/x-default), Open Graph and
   Twitter tags with **absolute `https://a3gent.com/…` URLs** — canonical is
-  what keeps the mohazi.com/a3gent/ copy from counting as a duplicate. Body
+  what keeps any other copy (e.g. the LAN address) from counting as a duplicate. Body
   links stay relative. The home pages also carry Organization/WebSite JSON-LD.
 - A new page needs the same head block and an entry (with its ko/en pair) in
   `sitemap.xml`; bump `<lastmod>` when content changes.
