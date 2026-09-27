@@ -46,6 +46,9 @@ Inside `site/`:
   the body, `id="faq-ld"`), inquiry CTA. Don't let two pages target the same
   query. Every page's footer carries a `footer-fields` nav linking all five
   (internal links matter for ranking) — add new pages there too.
+  The header nav has 분야/Fields (`a.nav-fields`, after 솔루션) pointing to the
+  `medical-ai` hub, marked current on field pages; on tablets (761–1000 px)
+  only Solutions, Fields, the CTA and the language switch show.
 - Copy style: outcome-first, short headlines, often a contrast pair
   ("시제품은 적게, 검증은 먼저"); one or two sentences that say how and what
   results, with concrete numbers where the material has them; Korean H1/H2 in

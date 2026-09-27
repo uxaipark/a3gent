@@ -735,3 +735,11 @@ html[lang="en"] body { word-break: normal; }
   .path-4 li:nth-child(3) a { border-radius: 0 0 0 var(--radius); }
   .path-4 li:nth-child(4) a { border-radius: 0 0 var(--radius) 0; }
 }
+
+/* Header on tablets: keep Solutions, Fields, the CTA and the language switch;
+   the rest are one tap away on the landing page. */
+.nav a, .wordmark { white-space: nowrap; }
+@media (max-width: 1000px) and (min-width: 761px) {
+  .nav { gap: 20px; }
+  .nav > a:not(.nav-cta):not(.nav-fields):not([href$="#solutions"]) { display: none; }
+}
