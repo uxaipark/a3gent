@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hospital patient monitoring system development — wearable-patch remote monitoring, hospital IoT | a3gent</title>
+<meta name="description" content="We build remote patient monitoring systems that collect vital signs from inpatients’ wearable patches across the hospital in real time, with alarms, hospital maps and EMR integration, load-tested before they reach the ward.">
+<link rel="canonical" href="https://a3gent.com/en/hospital-monitoring/">
+<link rel="alternate" hreflang="ko" href="https://a3gent.com/hospital-monitoring/">
+<link rel="alternate" hreflang="en" href="https://a3gent.com/en/hospital-monitoring/">
+<link rel="alternate" hreflang="x-default" href="https://a3gent.com/hospital-monitoring/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="a3gent">
+<meta property="og:url" content="https://a3gent.com/en/hospital-monitoring/">
+<meta property="og:title" content="Hospital patient monitoring system development — wearable-patch remote monitoring, hospital IoT | a3gent">
+<meta property="og:description" content="We build remote patient monitoring systems that collect vital signs from inpatients’ wearable patches across the hospital in real time, with alarms, hospital maps and EMR integration, load-tested before they reach the ward.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:image" content="https://a3gent.com/media/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="a3gent — Medical AI adoption without an in-house AI team">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../" aria-label="a3gent">a3gent</a>
+    <nav class="nav" aria-label="Main"><a href="../#solutions">Solutions</a><a href="../#cases">Case studies</a><a href="../#engagement">How to engage</a><a href="../../demos/en/">Demos</a><a href="../about/">About</a><a class="nav-cta" href="../#contact">Talk to us</a><span class="lang" aria-label="Language"><a href="../../hospital-monitoring/" lang="ko" hreflang="ko">KO</a><a href="./" aria-current="true" lang="en">EN</a></span></nav>
+  </div>
+</header>
+
+<main>
+  <section class="section sol-hero" aria-labelledby="field-title">
+    <div class="wrap">
+      <p class="sol-crumb"><a href="../">Fields</a> <span aria-hidden="true">/</span> Hospital monitoring</p>
+      <div class="section-head field-head">
+        <p class="kicker">Hospital Monitoring</p>
+        <h1 id="field-title">Hospital patient monitoring, from bed to whole hospital</h1>
+        <p class="section-lede">ECG, respiration, SpO₂ and temperature from inpatients’ wearable patches, collected across the whole hospital in real time. Alarms, hospital maps, records and EMR integration in one system, tested at operating scale before it reaches the ward.</p>
+        <div class="sol-actions">
+          <button type="button" class="btn btn-primary" data-inquiry>Talk to us<span class="arrow" aria-hidden="true">→</span></button>
+          <a class="btn btn-plain" href="#related">See related solutions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="problems-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="problems-title">Real time on the ward, proven before it gets there</h2>
+      </div>
+      <div class="caps">
+        <article class="cap spot" data-reveal="1">
+          <h3>The whole hospital on one screen</h3>
+          <p>Patients grouped by ward, room and gateway, with live waveforms and vitals. A patient in alarm stands out from across the room.</p>
+        </article>
+        <article class="cap spot" data-reveal="2">
+          <h3>Alarms, and where they are</h3>
+          <p>Four-level alarms shown with patient and gateway locations on the hospital map, so the right person knows where to go.</p>
+        </article>
+        <article class="cap spot" data-reveal="3">
+          <h3>Every record kept, none altered</h3>
+          <p>Waveforms stored per patient, sealed for integrity, backed up and verified again on restore.</p>
+        </article>
+        <article class="cap spot" data-reveal="4">
+          <h3>Operating scale before the ward</h3>
+          <p>Thousands of virtual patients, gateways and EMRs test load and failures first. Validated at 2,100 patients.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tech-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="tech-title">From patch to hospital system</h2>
+      </div>
+      <table class="spec" data-reveal>
+        <tbody>
+          <tr><th scope="row">Channels</th><td>ECG · 3-axis acceleration · PPG · respiration waveform; heart rate · respiration rate · SpO₂ · temperature · glucose</td></tr>
+          <tr><th scope="row">Real-time transport</th><td>Per-gateway connections, 200 ms frames, CRC-32 checks, retransmission of missing frames</td></tr>
+          <tr><th scope="row">Alarms and location</th><td>Four-level alarms, hospital maps by building and floor, gateway coverage and dead zones</td></tr>
+          <tr><th scope="row">Storage and backup</th><td>Per-patient files, CRC-32 and SHA-256 seals, backup to NAS, SFTP and more with verified restore</td></tr>
+          <tr><th scope="row">EMR integration</th><td>FHIR R4 and STU3, HL7 v2, Korean EMR formats: census in, vital signs written back</td></tr>
+          <tr><th scope="row">Access and security</th><td>Fine-grained permissions for eight roles, data separated per hospital, audit records</td></tr>
+          <tr><th scope="row">Load testing</th><td>Operating-scale scenarios recreated with virtual patients, gateways and EMRs</td></tr>
+        </tbody>
+      </table>
+
+      <div class="section-head sol-spec-head" data-reveal>
+        <h2>From problem to handover, in four steps</h2>
+      </div>
+      <ol class="steps"><li class="spot" data-reveal="1"><span class="step-no">1</span><strong>Define</strong><p>Agree ward scale, channels, alarm criteria and the EMRs to integrate up front.</p></li><li class="spot" data-reveal="2"><span class="step-no">2</span><strong>Design and build</strong><p>Build on a proven platform, designed around the hospital’s layout and workflows.</p></li><li class="spot" data-reveal="3"><span class="step-no">3</span><strong>Load-test and integrate</strong><p>Test operating-scale load and failures with the emulator, and connect to the systems on site.</p></li><li class="spot" data-reveal="4"><span class="step-no">4</span><strong>Validate and hand over</strong><p>Validate on site and hand over for the hospital IT team to run.</p></li></ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="related" aria-labelledby="related-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="related-title">Start from solutions that already work</h2>
+      </div>
+      <div class="grid-3 field-related">
+        <article class="cap spot" data-reveal="1">
+          <h3>Bio-Signal IoT Platform</h3>
+          <p>Real-time monitoring of inpatients’ wearable-patch signals across the whole hospital.</p>
+          <a class="link-out" href="../solutions/biosignal-platform/">Learn more <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="cap spot" data-reveal="2">
+          <h3>Bio-Signal Emulator</h3>
+          <p>Load-test remote monitoring systems at operating scale, before they reach the ward.</p>
+          <a class="link-out" href="../solutions/biosignal-emulator/">Learn more <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="cap spot" data-reveal="3">
+          <h3>Biosignal AI</h3>
+          <p>ECG, PPG and respiration processing, and anomaly-detection algorithms.</p>
+          <a class="link-out" href="../biosignal-ai/">Learn more <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="faq-title">Frequently asked questions</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details class="faq-item">
+          <summary>How large can it scale?</summary>
+          <p>In load tests it handled 2,100 patients, about 2,000 gateways and about 11,000 records per second on one small desktop computer. Validation in a real hospital is part of adoption.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can it integrate with our EMR?</summary>
+          <p>It supports FHIR R4 and STU3, HL7 v2 and Korean EMR formats, and integration was validated against 20 simulated hospital sites in Korea and abroad.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What about medical-device regulatory approval?</summary>
+          <p>Clinical use requires medical-device regulatory approval after deployment. The solution becomes the customer’s own product, so the approval is obtained directly in the customer’s own name.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can we test it before it reaches the ward?</summary>
+          <p>Yes. A hospital-scale emulator recreates virtual patients, gateways and failure scenarios so it can be tested first.</p>
+        </details>
+      </div>
+      <script type="application/ld+json" id="faq-ld">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How large can it scale?", "acceptedAnswer": {"@type": "Answer", "text": "In load tests it handled 2,100 patients, about 2,000 gateways and about 11,000 records per second on one small desktop computer. Validation in a real hospital is part of adoption."}}, {"@type": "Question", "name": "Can it integrate with our EMR?", "acceptedAnswer": {"@type": "Answer", "text": "It supports FHIR R4 and STU3, HL7 v2 and Korean EMR formats, and integration was validated against 20 simulated hospital sites in Korea and abroad."}}, {"@type": "Question", "name": "What about medical-device regulatory approval?", "acceptedAnswer": {"@type": "Answer", "text": "Clinical use requires medical-device regulatory approval after deployment. The solution becomes the customer’s own product, so the approval is obtained directly in the customer’s own name."}}, {"@type": "Question", "name": "Can we test it before it reaches the ward?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A hospital-scale emulator recreates virtual patients, gateways and failure scenarios so it can be tested first."}}]}</script>
+
+      <div class="contact-card" data-reveal>
+        <div>
+          <p class="contact-label">Talk to us</p>
+          <p class="contact-line">Tell us the ward scale and the signals you need.</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-inquiry>Send an inquiry<span class="arrow" aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="wordmark">a3gent</span>
+    <span class="footer-tag">Medical AI adoption without an in-house AI team.</span>
+    <span class="copy">© 2026 a3gent</span>
+    <nav class="footer-fields" aria-label="Fields"><a href="../medical-ai/">Medical AI</a><a href="../biosignal-ai/">Biosignal AI</a><a href="../medical-imaging-ai/">Medical imaging AI</a><a href="./">Hospital monitoring</a><a href="../ai-agent/">Medical AI agents</a></nav>
+  </div>
+</footer>
+<script src="../../ui.js" defer></script>
+<script src="../../laser.js" defer></script>
+</body>
+</html>

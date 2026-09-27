@@ -38,6 +38,18 @@ Inside `site/`:
   captured from the live demos at 1600×1000. Card slides:
   `media/<slug>-1..5.jpg` (1200×750). Copy comes from each solution's own
   material (README, on-screen labels) — don't add claims beyond it.
+- Field landing pages (one search intent each, KO `/<slug>/`, EN `/en/<slug>/`):
+  `medical-ai` (hub), `biosignal-ai`, `medical-imaging-ai`,
+  `hospital-monitoring`, `ai-agent`. Each: keyword H1 and title
+  ("<topic> 개발 — <related terms> | a3gent"), problems it fits, technology
+  table, four steps, related solutions/fields, FAQ with FAQPage JSON-LD (in
+  the body, `id="faq-ld"`), inquiry CTA. Don't let two pages target the same
+  query. Every page's footer carries a `footer-fields` nav linking all five
+  (internal links matter for ranking) — add new pages there too.
+- Copy style: outcome-first, short headlines, often a contrast pair
+  ("시제품은 적게, 검증은 먼저"); one or two sentences that say how and what
+  results, with concrete numbers where the material has them; Korean H1/H2 in
+  noun form (개조식), body in plain 합니다 체; avoid dated words (귀사 → 고객사).
 - `media/` is served with a one-day browser cache: when you replace an image
   under the same name, add or bump a `?v=N` on every URL that points to it
   (cards in the landing and demo hub, solution pages).

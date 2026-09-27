@@ -140,4 +140,60 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/biosignal-ai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/biosignal-ai/"/>
   </url>
+  <url>
+    <loc>https://a3gent.com/medical-ai/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/medical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/medical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/medical-ai/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/medical-ai/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/medical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/medical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/medical-ai/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/medical-imaging-ai/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/medical-imaging-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/medical-imaging-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/medical-imaging-ai/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/medical-imaging-ai/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/medical-imaging-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/medical-imaging-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/medical-imaging-ai/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/hospital-monitoring/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/hospital-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/hospital-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/hospital-monitoring/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/hospital-monitoring/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/hospital-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/hospital-monitoring/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/hospital-monitoring/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/ai-agent/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/ai-agent/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/ai-agent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/ai-agent/"/>
+  </url>
+  <url>
+    <loc>https://a3gent.com/en/ai-agent/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://a3gent.com/ai-agent/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://a3gent.com/en/ai-agent/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://a3gent.com/ai-agent/"/>
+  </url>
 </urlset>

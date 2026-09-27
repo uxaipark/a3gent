@@ -507,6 +507,9 @@ dialog.inquiry[open] { animation: inquiry-in .18s ease-out; }
 .footer-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding-block: 36px; }
 .footer-inner .wordmark { font-size: 18px; }
 .copy { margin-left: auto; }
+.footer-fields { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 8px 22px; padding-top: 18px; margin-top: 4px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.footer-fields a { color: rgba(255, 255, 255, 0.6); text-decoration: none; }
+.footer-fields a:hover { color: #fff; }
 
 /* ── Responsive ─────────────────────────────────────── */
 @media (max-width: 1000px) {
