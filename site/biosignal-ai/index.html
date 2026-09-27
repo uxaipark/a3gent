@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>생체신호 AI 개발 — ECG·PPG 분석, 웨어러블 센서 알고리즘 | a3gent</title>
+<meta name="description" content="ECG·PPG·호흡 등 생체신호 AI를 센서 설계 검증부터 신호 처리, 이상징후 검출 알고리즘, 병원 모니터링 시스템까지 개발합니다. 가상 실험으로 시제품 비용과 기간을 줄입니다.">
+<link rel="canonical" href="https://a3gent.com/biosignal-ai/">
+<link rel="alternate" hreflang="ko" href="https://a3gent.com/biosignal-ai/">
+<link rel="alternate" hreflang="en" href="https://a3gent.com/en/biosignal-ai/">
+<link rel="alternate" hreflang="x-default" href="https://a3gent.com/biosignal-ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="a3gent">
+<meta property="og:url" content="https://a3gent.com/biosignal-ai/">
+<meta property="og:title" content="생체신호 AI 개발 — ECG·PPG 분석, 웨어러블 센서 알고리즘 | a3gent">
+<meta property="og:description" content="ECG·PPG·호흡 등 생체신호 AI를 센서 설계 검증부터 신호 처리, 이상징후 검출 알고리즘, 병원 모니터링 시스템까지 개발합니다. 가상 실험으로 시제품 비용과 기간을 줄입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://a3gent.com/media/og-ko.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="a3gent — AI 전문 인력 없이 시작하는 의료 현장 맞춤형 AI 도입">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="../" aria-label="a3gent">a3gent</a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="../#solutions">솔루션</a><a href="../#cases">적용 사례</a><a href="../#engagement">도입 방식</a><a href="../demos/">데모</a><a href="../about/">소개</a><a class="nav-cta" href="../#contact">도입 상담</a><span class="lang" aria-label="언어 선택"><a href="./" aria-current="true" lang="ko">KO</a><a href="../en/biosignal-ai/" lang="en" hreflang="en">EN</a></span></nav>
+  </div>
+</header>
+
+<main>
+  <section class="section sol-hero" aria-labelledby="field-title">
+    <div class="wrap">
+      <p class="sol-crumb"><a href="../">분야</a> <span aria-hidden="true">/</span> 생체신호 AI</p>
+      <div class="section-head field-head">
+        <p class="kicker">Biosignal AI</p>
+        <h1 id="field-title">생체신호 AI 개발</h1>
+        <p class="section-lede">ECG·PPG·호흡·가속도 같은 생체신호를 다루는 AI를 개발합니다. 웨어러블 센서 설계 검증부터 신호 처리와 이상징후 검출 알고리즘, 병원 규모의 실시간 모니터링 시스템까지 — 하드웨어와 소프트웨어가 만나는 지점을 함께 설계합니다.</p>
+        <div class="sol-actions">
+          <button type="button" class="btn btn-primary" data-inquiry>도입 문의<span class="arrow" aria-hidden="true">→</span></button>
+          <a class="btn btn-plain" href="#related">관련 솔루션 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="problems-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="problems-title">이런 과제에 적합합니다</h2>
+      </div>
+      <div class="caps">
+        <article class="cap spot" data-reveal="1">
+          <h3>센서 설계 검증 비용</h3>
+          <p>신호는 부착 위치·자세·움직임·조직 특성에 따라 크게 달라져, 설계를 확인하려면 실험과 시제품을 반복해야 합니다. 가상 실험 환경에서 먼저 검토해 시제품 횟수와 개발 기간을 줄입니다.</p>
+        </article>
+        <article class="cap spot" data-reveal="2">
+          <h3>노이즈와 움직임 아티팩트</h3>
+          <p>실사용 환경의 신호는 움직임과 접촉 상태에 흔들립니다. 신호 품질 판정, 아티팩트 분류, 여러 채널을 결합한 추정으로 쓸 수 있는 구간을 가려냅니다.</p>
+        </article>
+        <article class="cap spot" data-reveal="3">
+          <h3>이상징후 검출 알고리즘</h3>
+          <p>심전도 등 생체신호에서 이상징후를 검출하는 알고리즘을, 제품에 들어갈 수 있는 연산 조건에 맞춰 개발합니다.</p>
+        </article>
+        <article class="cap spot" data-reveal="4">
+          <h3>병원 규모의 수집과 모니터링</h3>
+          <p>수천 명 환자의 웨어러블 패치 신호를 실시간으로 모으고, 알람·위치·기록·EMR 연동까지 하나의 시스템으로 묶습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tech-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="tech-title">다루는 신호와 기술</h2>
+      </div>
+      <table class="spec" data-reveal>
+        <tbody>
+          <tr><th scope="row">심전도(ECG)</th><td>파형 합성·수집, 심박 추출, 이상징후 검출, ECG 유래 호흡(EDR)</td></tr>
+          <tr><th scope="row">광용적맥파(PPG)</th><td>녹색·적색·적외선 파장, 손목·손가락·반지형 센서, 맥박·SpO₂ 기준값</td></tr>
+          <tr><th scope="row">호흡</th><td>정전용량 패치, 가속도 호흡 성분, 여러 채널을 결합한 호흡수 추정</td></tr>
+          <tr><th scope="row">기타 신호</th><td>EEG · EMG · 체온 · 혈당 · 3축 가속도</td></tr>
+          <tr><th scope="row">신호 처리</th><td>DSP 필터링, 신호 품질 판정, 움직임 아티팩트 분류, 제약된 하드웨어 최적화</td></tr>
+          <tr><th scope="row">실시간 전송</th><td>게이트웨이별 전송, 200 ms 프레임, CRC 무결성 검사와 재전송</td></tr>
+          <tr><th scope="row">연동</th><td>FHIR · HL7 v2 등 EMR 연동, CSV·JSON 데이터 내보내기</td></tr>
+        </tbody>
+      </table>
+
+      <div class="section-head sol-spec-head" data-reveal>
+        <h2>개발 과정</h2>
+      </div>
+      <ol class="steps"><li class="spot" data-reveal="1"><span class="step-no">1</span><strong>과제 · 신호 정의</strong><p>측정 목적, 센서 위치, 필요한 신호와 검증 기준을 정합니다.</p></li><li class="spot" data-reveal="2"><span class="step-no">2</span><strong>가상 실험 · 알고리즘</strong><p>합성 신호로 센서 배치와 조건을 먼저 검토하고, 처리·검출 알고리즘을 개발합니다.</p></li><li class="spot" data-reveal="3"><span class="step-no">3</span><strong>시스템 연동 · 부하 검증</strong><p>게이트웨이·서버·EMR과 연동하고, 운영 규모의 부하 시험을 거칩니다.</p></li><li class="spot" data-reveal="4"><span class="step-no">4</span><strong>검증 · 이관</strong><p>고객사 데이터 기준으로 검증한 뒤, 내부 인력이 운영할 수 있게 이관합니다.</p></li></ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="related" aria-labelledby="related-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="related-title">관련 솔루션</h2>
+      </div>
+      <div class="grid-3 field-related">
+        <article class="cap spot" data-reveal="1">
+          <h3>SOMA</h3>
+          <p>웨어러블 센서 설계를 위한 바이오센싱 디지털 트윈 — 전신 모델에서 센서 배치와 합성 신호를 실험합니다.</p>
+          <a class="link-out" href="../solutions/soma/">자세히 보기 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="cap spot" data-reveal="2">
+          <h3>Bio-Signal IoT Platform</h3>
+          <p>입원 환자 웨어러블 패치의 생체신호를 병원 전체에서 실시간으로 모니터링합니다.</p>
+          <a class="link-out" href="../solutions/biosignal-platform/">자세히 보기 <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="cap spot" data-reveal="3">
+          <h3>Bio-Signal Emulator</h3>
+          <p>원격 모니터링 시스템을 병동 투입 전에 운영 규모로 시험하는 병원 에뮬레이터입니다.</p>
+          <a class="link-out" href="../solutions/biosignal-emulator/">자세히 보기 <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="faq-title">자주 묻는 질문</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details class="faq-item">
+          <summary>실측 데이터가 없어도 시작할 수 있나요?</summary>
+          <p>네. 가상 실험 환경의 합성 신호로 센서 배치와 측정 조건을 먼저 검토하고, 그 결과로 실측 데이터를 모을 범위를 좁힐 수 있습니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>기존 센서나 게이트웨이와 연동할 수 있나요?</summary>
+          <p>기존 장비와 시스템을 바꾸지 않고 그 위에서 동작하는 구조로 설계합니다. 전송 형식과 채널 구성은 착수 단계에서 함께 정합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>의료기기 인허가는 어떻게 되나요?</summary>
+          <p>실제 의료 현장에 적용하려면 구축 후 의료기기 인허가가 필요합니다. 구축한 솔루션은 고객사 고유의 제품이 되므로, 인허가 역시 고객사 명의로 직접 취득하실 수 있습니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>개발이 끝나면 누가 운영하나요?</summary>
+          <p>운영은 고객사가 맡습니다. 내부 인력만으로 운영할 수 있도록 코드와 문서를 함께 이관하고, 필요하면 관리 도구도 만듭니다.</p>
+        </details>
+      </div>
+      <script type="application/ld+json" id="faq-ld">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "실측 데이터가 없어도 시작할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 가상 실험 환경의 합성 신호로 센서 배치와 측정 조건을 먼저 검토하고, 그 결과로 실측 데이터를 모을 범위를 좁힐 수 있습니다."}}, {"@type": "Question", "name": "기존 센서나 게이트웨이와 연동할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "기존 장비와 시스템을 바꾸지 않고 그 위에서 동작하는 구조로 설계합니다. 전송 형식과 채널 구성은 착수 단계에서 함께 정합니다."}}, {"@type": "Question", "name": "의료기기 인허가는 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "실제 의료 현장에 적용하려면 구축 후 의료기기 인허가가 필요합니다. 구축한 솔루션은 고객사 고유의 제품이 되므로, 인허가 역시 고객사 명의로 직접 취득하실 수 있습니다."}}, {"@type": "Question", "name": "개발이 끝나면 누가 운영하나요?", "acceptedAnswer": {"@type": "Answer", "text": "운영은 고객사가 맡습니다. 내부 인력만으로 운영할 수 있도록 코드와 문서를 함께 이관하고, 필요하면 관리 도구도 만듭니다."}}]}</script>
+
+      <div class="contact-card" data-reveal>
+        <div>
+          <p class="contact-label">도입 상담</p>
+          <p class="contact-line">해결하고자 하는 과제부터 논의하겠습니다.</p>
+        </div>
+        <button type="button" class="btn btn-primary" data-inquiry>문의 남기기<span class="arrow" aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="wordmark">a3gent</span>
+    <span class="footer-tag">AI 전문 인력 없이 시작하는 의료 현장 맞춤형 AI 도입.</span>
+    <span class="copy">© 2026 a3gent</span>
+  </div>
+</footer>
+<script src="../ui.js" defer></script>
+<script src="../laser.js" defer></script>
+</body>
+</html>
